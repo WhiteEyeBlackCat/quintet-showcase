@@ -411,8 +411,8 @@ ${text(80, 576, "PLACEHOLDER SOCIAL IMAGE", 14, "#fff", 'letter-spacing="4" fill
 /* ------------------------------------------------------------ run */
 const covers = [cover01, cover02, cover03, cover04, cover05];
 // Projects that already have real media — never overwrite their files.
-// Project 03 (VizPilot) uses real screenshots; member C keeps an unlabelled avatar.
-const REAL = new Set(["03"]);
+// 02 (Taiwan housing) and 03 (VizPilot) use real screenshots; member C keeps an unlabelled avatar.
+const REAL = new Set(["02", "03"]);
 PROJECTS.forEach((p, i) => {
   if (REAL.has(p.n)) return;
   const dir = `projects/project-${p.n}`;

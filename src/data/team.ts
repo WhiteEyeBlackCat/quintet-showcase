@@ -16,10 +16,11 @@ export const team: TeamMember[] = [
     id: "member-b",
     name: "成員 B",
     nameEn: "Member B",
-    role: "生成式 AI 開發",
-    projectSlug: "image-generator",
+    role: "房價資料分析",
+    projectSlug: "taiwan-housing",
     avatar: "/team/member-b.svg",
-    bio: "關注生成式影像在創作流程中的應用，希望工具能讓設計師把時間放在構想本身。",
+    // 待補：姓名與自我介紹（目前只有作品資訊，姓名仍為範例）
+    bio: "台灣房價分析作者，以實價登錄資料建立可驗證、會說明自己誤差的估價模型。",
     isPlaceholder: true,
   },
   {

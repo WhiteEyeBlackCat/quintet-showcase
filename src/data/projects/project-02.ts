@@ -1,85 +1,122 @@
 import type { Project } from "@/types/content";
 
-// PLACEHOLDER — 虛構範例專案，請以實際專案內容替換。
+// 實際專案：台灣房價分析。內容整理自作者的專案說明（房價心得.pdf）與線上網站；
+// 截圖為網站深色模式的實際畫面（2026-10-15 擷取）。
+// 待補：開發者姓名、Claude Code 在各開發階段的協助方式（developmentStages[].claudeAssist）。
 const base = "/projects/project-02";
+const shot = (file: string, alt: string) =>
+  ({ type: "image", src: `${base}/${file}.jpg`, alt, width: 1600, height: 1000, position: "top" }) as const;
 
 export const project02: Project = {
   id: "project-02",
-  slug: "image-generator",
+  slug: "taiwan-housing",
   number: 2,
 
-  title: "影像生成工具",
-  subtitle: "Image Generator",
+  title: "台灣房價分析",
+  subtitle: "Taiwan Housing Analytics",
 
-  category: "生成式 AI",
-  categoryEn: "Generative AI",
+  category: "資料分析 · 估價模型",
+  categoryEn: "Housing Analytics",
 
   developer: "成員 B",
   developerId: "member-b",
 
-  summary: "以開源擴散模型為基礎的本機影像生成工具，協助創作者快速產出概念草圖與分鏡參考。",
+  summary: "用內政部實價登錄 314 萬筆原始交易建立每坪估價模型，並把模型有多準、哪裡不準、為什麼不準一起量出來放上網站。",
   motivation:
-    "概念設計與分鏡階段需要大量快速的視覺草稿，但每次都從頭描述與調整參數十分耗時。這個專案希望把常用的提示詞與風格整理成可重複使用的工具，讓創作者把精力放在構圖與故事上。",
-  audience: "需要快速產出視覺草稿的插畫師、遊戲與動畫前期設計人員，以及學習生成式影像的學生。",
-  problem: "提示詞寫法不一致、風格難以延續，且生成結果散落各處，難以比較與回溯。",
+    "房價資訊常只給一個平均數或一個估價數字，卻沒有說明它有多可靠。這個專案想把資料處理、估價方法與驗證結果攤開，讓每一個數字都能被檢查。",
+  audience: "想了解各地行情、評估購屋負擔，或想知道估價數字從何而來的一般購屋者與研究者。",
+  problem:
+    "實價登錄地址格式不統一、最新一季資料尚未登錄完整，而同條件的房子成交價本來就會散開——只給一個點估計很容易被誤用。",
   description:
-    "使用者可以選擇提示詞範本與風格預設，輸入主題後一次批次產生多張候選圖像。所有生成紀錄都保存於本機，方便比較參數，並重現喜歡的結果。",
+    "網站共 13 節，分成四組：市場行情（總覽、趨勢、行政區地圖、價格分佈）、估價與因素（影響因素、估價模型）、三個試算工具（房貸、買房 vs 租房、預算能買哪一區、租金投報率），以及兩個分析題目（房價 × 少子化、政策時間軸）。最後一節「數字怎麼來的」列出資料來源、每一層校正與全部驗證結果。整個網站是單一 HTML 檔，不需要後端，部署在 Cloudflare Workers。",
 
-  thumbnail: `${base}/cover.svg`,
-  heroImage: `${base}/screenshot-01.svg`,
+  thumbnail: `${base}/map.jpg`,
+  heroImage: `${base}/home.jpg`,
+  mediaPosition: "top",
 
   accentColor: "#E879D0",
   accentColorSecondary: "#FFB86B",
 
-  technologies: ["Python", "Stable Diffusion", "Gradio", "Claude Code"],
+  technologies: ["Python", "pandas", "numpy", "Hedonic 迴歸", "LightGBM", "SVG", "Playwright", "Cloudflare Workers"],
   techStack: [
-    { group: "語言", groupEn: "Languages", items: ["Python 3.11"] },
-    { group: "框架", groupEn: "Frameworks", items: ["Gradio"] },
-    { group: "AI 模型", groupEn: "AI Models", items: ["Stable Diffusion（開源擴散模型，範例）"] },
-    { group: "函式庫", groupEn: "Libraries", items: ["Diffusers", "Pillow"] },
-    { group: "開發工具", groupEn: "Dev Tools", items: ["Claude Code", "Git", "VS Code"] },
+    { group: "語言", groupEn: "Languages", items: ["Python", "HTML / JavaScript"] },
+    { group: "資料處理", groupEn: "Data", items: ["pandas", "numpy"] },
+    { group: "統計與模型", groupEn: "Modeling", items: ["Hedonic 迴歸（雙向固定效果）", "收縮估計", "區間校準（calibration curve、PIT）", "LightGBM（對照組）"] },
+    { group: "前端", groupEn: "Frontend", items: ["無框架單檔 HTML", "手寫 SVG 圖表"] },
+    { group: "測試與部署", groupEn: "Testing & Deploy", items: ["Playwright 自動化與反向測試", "Cloudflare Workers"] },
   ],
   architecture: {
-    summary: "以 Gradio 建立操作介面，後端負責提示詞組裝與批次任務管理，再透過 Diffusers 載入模型產生影像。",
+    summary:
+      "資料先在本機以 Python 清理、建模與驗證，結果輸出成網站內嵌的資料；網站本身是單一 HTML 檔，所有圖表在瀏覽器以 SVG 繪製，不需要後端或任何 API。",
     layers: [
-      { name: "介面層", description: "Gradio 操作頁面，包含範本選擇、參數設定與結果瀏覽。", items: ["提示詞表單", "結果瀏覽"] },
-      { name: "處理層", description: "提示詞組裝、風格套用與批次任務排程。", items: ["範本引擎", "批次佇列"] },
-      { name: "模型層", description: "以 Diffusers 載入開源擴散模型並執行推論。", items: ["模型載入", "推論設定"] },
+      {
+        name: "資料層",
+        description: "內政部實價登錄（買賣、租賃、預售屋），併入戶政人口與戶數、央行與稅制政策事件、官方房價指數。",
+        items: ["地址整理成可比對的路街", "暫定季標示"],
+      },
+      {
+        name: "模型層",
+        description: "Hedonic 迴歸估計每坪單價，再以行政區殘差與逐層校正算出價格區間。",
+        items: ["路街 × 季雙向固定效果", "區間逐層校正"],
+      },
+      {
+        name: "驗證層",
+        description: "在模型沒看過的季別上驗證區間命中率，並做滾動原點回測與 LightGBM 對照。",
+        items: ["樣本外驗證", "滾動回測"],
+      },
+      {
+        name: "網站層",
+        description: "單檔 HTML、手寫 SVG 圖表，處理行動版橫向捲動與無障礙替代文字。",
+        items: ["13 節內容", "Cloudflare Workers"],
+      },
     ],
   },
 
   features: [
     {
-      id: "templates",
-      title: "提示詞範本",
-      titleEn: "Prompt Templates",
-      description: "將常用的角色、場景與鏡頭描述整理成範本，填入關鍵字即可組成完整提示詞。",
-      highlights: ["角色與場景範本", "關鍵字填入"],
-      media: { type: "image", src: `${base}/screenshot-01.svg`, alt: "提示詞範本介面示意圖（預留畫面）", placeholder: true, width: 1600, height: 1000 },
+      id: "market",
+      title: "市場行情：先看量，再看價",
+      titleEn: "Market Overview & Trends",
+      description:
+        "全國每一季的成交量與每坪單價，以及各縣市的位置；趨勢頁把縣市與行政區的單價指數化後疊在一起，可以任選幾個比較十年走勢。",
+      highlights: ["成交量與單價", "縣市／行政區比較"],
+      media: shot("trend", "房價趨勢頁：多個縣市的每坪單價十年走勢疊圖"),
     },
     {
-      id: "styles",
-      title: "風格預設",
-      titleEn: "Style Presets",
-      description: "提供多組風格預設，讓同一個主題能快速切換不同的畫風。",
-      highlights: ["畫風切換", "預設可自訂"],
-      media: { type: "image", src: `${base}/screenshot-02.svg`, alt: "風格預設介面示意圖（預留畫面）", placeholder: true, width: 1600, height: 1000 },
+      id: "map",
+      title: "行政區地圖",
+      titleEn: "District Map",
+      description:
+        "用自己處理過的村里界做分級著色，底圖是 OpenStreetMap 的台灣全島檔；成交太少的區域直接留灰，不做推估。",
+      highlights: ["分級著色", "樣本不足不推估"],
+      media: shot("map", "行政區地圖：全台各縣市每坪中位數分級著色與排行表"),
     },
     {
-      id: "batch",
-      title: "批次生成",
-      titleEn: "Batch Generation",
-      description: "一次送出多個變體，批次產生候選圖像，並依序顯示於結果區。",
-      highlights: ["多張變體", "依序預覽"],
-      media: { type: "image", src: `${base}/screenshot-03.svg`, alt: "批次生成結果示意圖（預留畫面）", placeholder: true, width: 1600, height: 1000 },
+      id: "factors",
+      title: "拆開房價影響因素",
+      titleEn: "Price Factors",
+      description:
+        "同一條街、同一季、其他條件都一樣時，只差一個條件，每坪單價會差幾 %——分別看屋齡、坪數、樓層、有無車位，以及 5 種建物型態。",
+      highlights: ["控制其他條件", "5 種建物型態"],
+      media: shot("factors", "房價影響因素：各條件對每坪單價影響的長條圖"),
     },
     {
-      id: "history",
-      title: "生成紀錄",
-      titleEn: "Generation History",
-      description: "每次生成的提示詞、參數與圖像都會保存於本機，方便回溯與重現。",
-      highlights: ["參數紀錄", "本機保存"],
-      media: { type: "image", src: `${base}/screenshot-04.svg`, alt: "生成紀錄介面示意圖（預留畫面）", placeholder: true, width: 1600, height: 1000 },
+      id: "valuation",
+      title: "給區間的估價模型",
+      titleEn: "Interval Valuation",
+      description:
+        "輸入縣市、行政區、路街、坪數、屋齡、樓層與建物型態，網站回一個價格區間而不是一個點，並標明這個區間的信心等級與實測命中率。",
+      highlights: ["價格區間", "信心等級", "實測命中率"],
+      media: shot("valuation", "每坪估價模型：輸入物件條件後得到價格區間"),
+    },
+    {
+      id: "tools",
+      title: "購屋試算工具",
+      titleEn: "Affordability Tools",
+      description:
+        "房貸試算月付金額與利率敏感度；買房與租房比較長期總成本；「我的預算能買哪一區」由預算反查可負擔的行政區；租金投報率比較各地差異。",
+      highlights: ["房貸試算", "買房 vs 租房", "預算反查"],
+      media: shot("afford", "我的預算能買哪一區：輸入收入與自備款，反查可負擔的行政區"),
     },
   ],
 
@@ -87,68 +124,84 @@ export const project02: Project = {
     {
       key: "idea",
       label: "IDEA",
-      title: "發想與需求定義",
-      description: "整理概念設計流程中最耗時的步驟，定義範本、風格、批次與紀錄四項核心需求。",
-      claudeAssist: "與 Claude Code 討論工具範圍，並將需求拆解成可逐步完成的任務。",
+      title: "不只給一個數字",
+      description: "目標是建立每坪估價模型，並把模型有多準、哪裡不準、為什麼不準一起量出來，放在同一個網站上。",
     },
     {
       key: "prototype",
       label: "PROTOTYPE",
-      title: "快速建立原型",
-      description: "以 Gradio 建立最小介面，先打通輸入提示詞到顯示影像的流程。",
-      claudeAssist: "由 Claude Code 產生初版介面與模型呼叫程式碼。",
+      title: "整理實價登錄資料",
+      description:
+        "最花時間的不是統計，而是資料本身：地址欄位格式不統一，必須先整理成可以互相比對的路街，才能當成固定效果使用。",
     },
     {
       key: "build",
       label: "BUILD",
-      title: "迭代開發功能",
-      description: "加入範本引擎、風格預設與批次佇列，逐步擴充功能。",
-      claudeAssist: "請 Claude Code 協助抽出共用模組，並為每個函式補上說明。",
+      title: "估價模型與區間",
+      description:
+        "以 log(每坪單價) 為被解釋變數的 hedonic 迴歸，用「路街 × 季」雙向固定效果吸收位置與時間；再依行政區殘差逐層校正出價格區間。",
     },
     {
       key: "debug",
       label: "DEBUG",
-      title: "測試與問題排除",
-      description: "處理顯示記憶體不足、生成逾時與批次中斷等問題。",
-      claudeAssist: "將錯誤紀錄交給 Claude Code，協助定位原因並提出修正方案。",
+      title: "驗證與回測",
+      description:
+        "在模型沒看過的季別上驗證區間命中率，做 8 個時點的滾動原點回測，並和 LightGBM 對照隨機切分與時間切分的差別。",
     },
     {
       key: "final",
       label: "FINAL PRODUCT",
-      title: "完成最終版本",
-      description: "整理介面版面與操作說明，完成可展示的本機版本。",
-      claudeAssist: "協助撰寫安裝步驟與使用說明文件。",
+      title: "單檔網站上線",
+      description: "13 節內容整合成單一 HTML 檔，處理行動版與無障礙替代文字，部署在 Cloudflare Workers；資料每季更新並重跑驗證。",
     },
   ],
 
   challenges: [
     {
-      title: "模型執行所需記憶體偏高",
-      problem: "在一般個人電腦上執行擴散模型時，記憶體與顯示記憶體容量容易不足。",
-      approach: "調整推論精度與批次大小，並提供較小的預設設定作為起點。",
-      lesson: "工具的預設值應優先考慮一般硬體，進階設定再交由使用者調整。",
+      title: "地址格式不統一",
+      problem: "實價登錄的地址有巷弄、有段號，也有直接寫「見其他登記事項」，無法直接比對。",
+      approach: "先把地址整理成可互相比對的路街，最後保留成交筆數在 40 筆以上的 9,087 條路街作為固定效果。",
+      lesson: "資料清理的品質決定了模型能做到多細。",
     },
     {
-      title: "同一提示詞的結果不穩定",
-      problem: "相同提示詞每次生成的構圖差異很大，不利於比較。",
-      approach: "在生成紀錄中保存隨機種子與所有參數，讓結果可以重現。",
-      lesson: "可重現性比單次結果的品質更能支撐創作流程。",
+      title: "最新一季資料不完整",
+      problem: "登錄有時間落差，2026Q2 目前只進來約 23% 的量。",
+      approach: "回頭比對過去 16 季的經驗，估出暫定季的偏誤中位數約 1.14%；網站標示為暫定值，模型也不拿它當基準季。",
+      lesson: "不完整的資料要標示清楚，而不是當成完整資料使用。",
+    },
+    {
+      title: "誤差有一個下限",
+      problem: "把條件完全鎖死，剩下的價格離散仍佔整體殘差的 41%，來自實價登錄沒有的欄位，例如裝潢、座向、鄰損與議價空間。",
+      approach: "不硬壓誤差，而是輸出經過校準的區間，並在網站上說明這個限制。",
+      lesson: "這是估價參考，不是鑑價，不能直接當成交易依據。",
+    },
+    {
+      title: "更準的模型不一定更適合",
+      problem: "LightGBM 在隨機切分下明顯較準，但改成時間切分後差距縮小，模型檔也比整個網站大 14 倍。",
+      approach: "保留 hedonic 迴歸作為主模型：可以解釋、能給出區間，也放得進單檔網站。",
+      lesson: "驗證方式要貼近實際使用情境——預測的是未來的季別。",
     },
   ],
 
   results: [
-    { label: "核心功能", value: "4 項", description: "完成範本、風格、批次生成與生成紀錄四項功能（範例內容，待實際成果替換）。" },
-    { label: "成果說明", description: "完成可操作的本機展示版本，實際使用成效待實際專案內容替換。" },
+    { label: "原始交易資料", value: "314 萬筆", description: "內政部實價登錄，涵蓋 2016Q1–2026Q2，全台 22 縣市、314 個行政區。" },
+    { label: "模型解釋力", value: "R² 0.817", description: "Hedonic 迴歸共 9,474 個係數，殘差標準差 0.2541（約 ±29%）。" },
+    { label: "80% 區間命中率", value: "79.1%", description: "在模型沒看過的 2026Q1（23,487 筆）驗證；95% 區間實測命中 91.8%。" },
+    { label: "點估計誤差中位數", value: "12.7%", description: "優於直接查行政區中位數的 23.3%；網站整體是一個 4,638 KB 的 HTML 檔。" },
   ],
 
   gallery: [
-    { type: "image", src: `${base}/screenshot-01.svg`, alt: "主畫面示意圖（預留畫面）", placeholder: true, width: 1600, height: 1000 },
-    { type: "image", src: `${base}/screenshot-02.svg`, alt: "風格預設示意圖（預留畫面）", placeholder: true, width: 1600, height: 1000 },
-    { type: "image", src: `${base}/screenshot-03.svg`, alt: "批次結果示意圖（預留畫面）", placeholder: true, width: 1600, height: 1000 },
+    shot("overview", "市場總覽：全國每坪中位數、成交量與年增率"),
+    shot("spread", "價格分佈：同一行政區內的價格帶"),
+    shot("birth", "房價 × 少子化：人口與戶數變化和房價的比較"),
+    shot("policy", "政策與事件時間軸：23 項政策標在價量圖上"),
+    shot("mortgage", "房貸試算：月付金額與負擔率"),
+    shot("method", "數字怎麼來的：資料來源與驗證結果"),
   ],
 
-  // 尚無實際連結 — 有網址時再填入，按鈕會自動顯示。
-  links: {},
+  links: {
+    demo: "https://taiwan-housing.llnick91326.workers.dev/",
+  },
 
-  isPlaceholder: true,
+  isPlaceholder: false,
 };
