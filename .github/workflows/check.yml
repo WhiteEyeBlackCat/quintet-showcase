@@ -1,0 +1,27 @@
+# 每次有人修改內容，GitHub 會自動檢查：內容格式、型別、程式風格與完整建置。
+# 結果會在 commit 旁顯示 ✓ 或 ✗；點 ✗ 可以看到哪裡要修。
+name: 內容檢查
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: 檢查作品與成員資料
+        run: npm run check:content
+      - name: 型別檢查
+        run: npm run typecheck
+      - name: 程式風格檢查
+        run: npm run lint
+      - name: 建置網站
+        run: npx next build

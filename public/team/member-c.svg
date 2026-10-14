@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Member C avatar placeholder">
+<title>Member C avatar placeholder</title>
+<defs>
+<linearGradient id="avCbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0a0e1d"/><stop offset="0.55" stop-color="#4D8DFF" stop-opacity="0.55"/><stop offset="1" stop-color="#5EE3F0"/></linearGradient>
+<radialGradient id="avCgl" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#fff" stop-opacity="0.35"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient></defs>
+<rect width="400" height="400" fill="url(#avCbg)"/><circle cx="161.3" cy="10.5" r="42.5" fill="#4D8DFF" fill-opacity="0.1"/><circle cx="332.5" cy="96.2" r="72.5" fill="#5EE3F0" fill-opacity="0.1"/><circle cx="189.1" cy="207.6" r="87" fill="#4D8DFF" fill-opacity="0.1"/><circle cx="183.3" cy="138" r="64.7" fill="#5EE3F0" fill-opacity="0.1"/><circle cx="237.3" cy="139.7" r="127.3" fill="#4D8DFF" fill-opacity="0.1"/><circle cx="200" cy="200" r="190" fill="url(#avCgl)"/>
+<circle cx="200" cy="200" r="132" fill="#05060d" fill-opacity="0.35" stroke="#fff" stroke-opacity="0.7" stroke-width="2"/><circle cx="200" cy="200" r="150" fill="none" stroke="#fff" stroke-opacity="0.25" stroke-dasharray="2 10"/>
+<text x="200" y="260" font-family="Space Grotesk, Inter, Arial, sans-serif" font-size="170" fill="#fff" text-anchor="middle" font-weight="300">C</text>
+<text x="200" y="372" font-family="Space Grotesk, Inter, Arial, sans-serif" font-size="12" fill="#fff" text-anchor="middle" letter-spacing="5" fill-opacity="0.7"></text>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Member A avatar placeholder">
+<title>Member A avatar placeholder</title>
+<defs>
+<linearGradient id="avAbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0a0e1d"/><stop offset="0.55" stop-color="#4D8DFF" stop-opacity="0.55"/><stop offset="1" stop-color="#8B7CFF"/></linearGradient>
+<radialGradient id="avAgl" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#fff" stop-opacity="0.35"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient></defs>
+<rect width="400" height="400" fill="url(#avAbg)"/><circle cx="250.8" cy="1.1" r="103.3" fill="#4D8DFF" fill-opacity="0.2"/><circle cx="387.4" cy="112.4" r="113.5" fill="#8B7CFF" fill-opacity="0.1"/><circle cx="170.3" cy="397.9" r="94.6" fill="#4D8DFF" fill-opacity="0.1"/><circle cx="55.6" cy="161.5" r="69.7" fill="#8B7CFF" fill-opacity="0.1"/><circle cx="195.7" cy="26.9" r="87.4" fill="#4D8DFF" fill-opacity="0.1"/><circle cx="200" cy="200" r="190" fill="url(#avAgl)"/>
+<circle cx="200" cy="200" r="132" fill="#05060d" fill-opacity="0.35" stroke="#fff" stroke-opacity="0.7" stroke-width="2"/><circle cx="200" cy="200" r="150" fill="none" stroke="#fff" stroke-opacity="0.25" stroke-dasharray="2 10"/>
+<text x="200" y="260" font-family="Space Grotesk, Inter, Arial, sans-serif" font-size="170" fill="#fff" text-anchor="middle" font-weight="300">A</text>
+<text x="200" y="372" font-family="Space Grotesk, Inter, Arial, sans-serif" font-size="12" fill="#fff" text-anchor="middle" letter-spacing="5" fill-opacity="0.7">PLACEHOLDER</text>
+</svg>
