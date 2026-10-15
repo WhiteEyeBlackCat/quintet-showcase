@@ -5,7 +5,7 @@ export const team: TeamMember[] = [
   {
     id: "member-a",
     name: "李芸瑄",
-    nameEn: "Yun-Hsuan Li",
+    nameEn: "LI YUN HSUAN",
     role: "AI 接單助手開發",
     projectSlug: "water-delivery-ai-assistant",
     avatar: "/team/member-a.svg",
@@ -14,14 +14,13 @@ export const team: TeamMember[] = [
   },
   {
     id: "member-b",
-    name: "成員 B",
-    nameEn: "Member B",
+    name: "林才榆",
+    nameEn: "LIN CAI YU",
     role: "房價資料分析",
     projectSlug: "taiwan-housing",
     avatar: "/team/member-b.svg",
-    // 待補：姓名與自我介紹（目前只有作品資訊，姓名仍為範例）
     bio: "台灣房價分析作者，以實價登錄資料建立可驗證、會說明自己誤差的估價模型。",
-    isPlaceholder: true,
+    isPlaceholder: false,
   },
   {
     id: "member-c",

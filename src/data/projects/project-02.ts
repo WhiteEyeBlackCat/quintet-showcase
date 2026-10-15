@@ -18,7 +18,7 @@ export const project02: Project = {
   category: "資料分析 · 估價模型",
   categoryEn: "Housing Analytics",
 
-  developer: "成員 B",
+  developer: "林才榆 LIN CAI YU",
   developerId: "member-b",
 
   summary: "用內政部實價登錄 314 萬筆原始交易建立每坪估價模型，並把模型有多準、哪裡不準、為什麼不準一起量出來放上網站。",
