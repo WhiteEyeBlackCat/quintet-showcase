@@ -4,13 +4,13 @@ import type { TeamMember } from "@/types/content";
 export const team: TeamMember[] = [
   {
     id: "member-a",
-    name: "成員 A",
-    nameEn: "Member A",
-    role: "AI 應用開發",
-    projectSlug: "ai-learning-assistant",
+    name: "李芸瑄",
+    nameEn: "Yun-Hsuan Li",
+    role: "AI 接單助手開發",
+    projectSlug: "water-delivery-ai-assistant",
     avatar: "/team/member-a.svg",
-    bio: "專注於以大型語言模型打造學習輔助工具，喜歡把零散的學習資料整理成清楚的脈絡。",
-    isPlaceholder: true,
+    bio: "AI 接單助手開發者，從親戚經營的傳統送水公司出發，讓 AI 負責聽懂客戶需求、程式負責查證事實，不讓 AI 自己裝懂亂猜。",
+    isPlaceholder: false,
   },
   {
     id: "member-b",
