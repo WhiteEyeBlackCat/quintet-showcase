@@ -13,7 +13,7 @@ export const project01: Project = {
   category: "AI 應用",
   categoryEn: "AI Application",
 
-  developer: "李芸瑄",
+  developer: "李芸瑄 LI YUN HSUAN",
   developerId: "member-a",
 
   summary:
