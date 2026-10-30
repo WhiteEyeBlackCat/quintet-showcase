@@ -8,6 +8,7 @@ import { depthOf, depthStyle, hexToRgb, slotAngle, type UniverseProject } from "
 import type { SceneNode, UniverseRenderer } from "./universeRenderer";
 import { UniverseNode } from "./UniverseNode";
 import { UniversePreview } from "./UniversePreview";
+import { counts, zh } from "@/data/program";
 
 const WIDE_QUERY = "(min-width: 1200px)";
 const CROSSFADE = "transition-[opacity,filter,translate] duration-[600ms] ease-out-expo";
@@ -442,7 +443,7 @@ export function UniverseExperience({ projects, headingId }: UniverseExperiencePr
                   lang="zh-Hant"
                   className="mt-5 hidden max-w-[24rem] text-[0.9375rem] leading-relaxed text-ink-soft md:block lg:max-w-[30rem] lg:text-base"
                 >
-                  五個不同領域的創意作品，共同構成這次計畫的作品宇宙
+                  {zh(counts.projects)}個不同領域的創意作品，共同構成這次計畫的作品宇宙
                 </p>
               </div>
 

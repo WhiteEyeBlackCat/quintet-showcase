@@ -1,30 +1,46 @@
 import type { ProgramInfo } from "@/types/content";
+import { projects } from "./projects";
+import { team } from "./team";
+
+const ZH = ["零", "一", "二", "三", "四", "五", "六", "七", "八", "九"];
+const EN = ["ZERO", "ONE", "TWO", "THREE", "FOUR", "FIVE", "SIX", "SEVEN", "EIGHT", "NINE"];
+const pad = (n: number) => String(n).padStart(2, "0");
+export const zh = (n: number) => ZH[n] ?? String(n);
+export const en = (n: number) => EN[n] ?? String(n);
+
+/** Counts derived from src/data, so the copy follows when a project or member is added. */
+export const counts = {
+  members: team.length,
+  projects: projects.length,
+  categories: new Set(projects.map((p) => p.category)).size,
+};
+export const tagline = `${en(counts.members)} MINDS. ${en(counts.projects)} BUILDS.`;
 
 export const program: ProgramInfo = {
   name: "QUINTET",
   title: ["QUINTET", "PROJECT EXHIBITION"],
-  tagline: "FIVE MINDS. FIVE BUILDS. ONE AI-POWERED JOURNEY.",
+  tagline: `${tagline} ONE AI-POWERED JOURNEY.`,
   description: [
-    "五重奏——五位成員，五個獨立創意專案。",
+    `五重奏——${zh(counts.members)}位成員，${zh(counts.projects)}個獨立創意專案。`,
     "透過 Claude Code 與 AI 輔助開發，將創意構想轉化為實際作品，探索人工智慧與軟體開發的更多可能。",
   ],
   // 只列出已確認的事實，不放入未經驗證的數據。
   stats: [
-    { value: "05", label: "參與成員", labelEn: "Participants" },
-    { value: "05", label: "完成專案", labelEn: "Projects" },
+    { value: pad(counts.members), label: "參與成員", labelEn: "Participants" },
+    { value: pad(counts.projects), label: "完成專案", labelEn: "Projects" },
     { value: "Claude Code", label: "主要開發工具", labelEn: "Primary Tool" },
   ],
   mission: {
     eyebrow: "OUR MISSION",
     heading: "用 AI 擴展創意的邊界",
     paragraphs: [
-      "這是一場以 AI 輔助開發為核心的實作計畫。五位成員從各自的興趣與專業出發，各自提出一個想解決的問題。",
+      `這是一場以 AI 輔助開發為核心的實作計畫。${zh(counts.members)}位成員從各自的興趣與專業出發，提出自己想解決的問題。`,
       "在開發過程中，Claude Code 是每個人的協作夥伴——協助拆解需求、產生程式碼、除錯與撰寫文件，讓構想能更快地成為可運作的作品。",
     ],
     chapters: [
       { label: "BACKGROUND", title: "計畫背景", description: "探索 AI 輔助開發在實際專案中的應用方式。" },
       { label: "METHOD", title: "開發方式", description: "每位成員獨立開發，以 Claude Code 作為主要開發工具。" },
-      { label: "WORKS", title: "五大作品", description: "涵蓋 AI 應用、影像生成、資料分析、桌面應用與模型研究。" },
+      { label: "WORKS", title: `${zh(counts.projects)}大作品`, description: "涵蓋 AI 應用、資料分析、本地 AI、語音 AI、AI 學習與模型研究。" },
       { label: "HIGHLIGHTS", title: "成果亮點", description: "從構想到完成作品，完整記錄每一步的開發歷程。" },
       { label: "FUTURE", title: "未來展望", description: "將這次的經驗延伸至更多領域與更大的專案。" },
     ],
@@ -62,9 +78,9 @@ export const program: ProgramInfo = {
     },
   ],
   facts: [
-    { value: "05", label: "位參與成員", labelEn: "Participants" },
-    { value: "05", label: "件完成作品", labelEn: "Completed Projects" },
-    { value: "05", label: "種專案類型", labelEn: "Project Categories" },
+    { value: pad(counts.members), label: "位參與成員", labelEn: "Participants" },
+    { value: pad(counts.projects), label: "件完成作品", labelEn: "Completed Projects" },
+    { value: pad(counts.categories), label: "種專案類型", labelEn: "Project Categories" },
     { value: "Claude Code", label: "AI 輔助開發工具", labelEn: "AI-assisted Development" },
   ],
   pillars: [
@@ -76,7 +92,7 @@ export const program: ProgramInfo = {
     {
       title: "獨立完成專案",
       titleEn: "Independent Builds",
-      description: "每位成員從構想、實作到完成，獨立負責一個完整作品。",
+      description: "每位成員從構想、實作到完成，獨立負責自己的作品。",
     },
     {
       title: "創意實驗",
@@ -96,13 +112,13 @@ export const program: ProgramInfo = {
     {
       title: "技術探索",
       titleEn: "Technical Exploration",
-      description: "涵蓋語言模型、影像生成、資料分析與桌面應用等不同技術領域。",
+      description: "涵蓋語言模型、語音辨識、資料分析與模型研究等不同技術領域。",
     },
   ],
   closing: {
     heading: ["THE END OF THE EXHIBITION.", "THE BEGINNING OF WHAT'S NEXT."],
     paragraphs: [
-      "五個作品，五種不同的探索方向。",
+      `${zh(counts.projects)}個作品，${zh(counts.categories)}種不同的探索方向。`,
       "從最初的構想，到最終完成的作品，這場實作展現了 AI 輔助開發所帶來的創造可能。",
     ],
   },

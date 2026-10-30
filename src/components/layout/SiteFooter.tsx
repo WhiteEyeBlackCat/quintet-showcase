@@ -2,6 +2,7 @@ import Link from "next/link";
 import { projects, formatProjectNumber } from "@/data/projects";
 import { BrandMark } from "./BrandMark";
 import { NAV_ITEMS } from "./nav";
+import { counts, tagline, zh } from "@/data/program";
 
 export function SiteFooter() {
   return (
@@ -13,7 +14,7 @@ export function SiteFooter() {
             <span className="font-display font-medium tracking-[0.18em]">QUINTET</span>
           </div>
           <p className="max-w-sm text-sm leading-relaxed text-ink-mute">
-            五位成員、五個作品，一段與 AI 共同創作的開發旅程。標示 PLACEHOLDER 的內容為虛構範例，待實際專案資料提供後替換。
+            {zh(counts.members)}位成員、{zh(counts.projects)}個作品，一段與 AI 共同創作的開發旅程。標示 PLACEHOLDER 的內容為虛構範例，待實際專案資料提供後替換。
           </p>
         </div>
         <nav aria-label="頁尾導覽">
@@ -43,8 +44,8 @@ export function SiteFooter() {
         </nav>
       </div>
       <div className="container-x flex flex-col justify-between gap-2 border-t border-line py-6 text-xs text-ink-mute sm:flex-row">
-        <p>© QUINTET · 五位創作者 × AI 的實作展 · Built with Claude Code</p>
-        <p className="font-display tracking-[0.2em]">FIVE MINDS. FIVE BUILDS.</p>
+        <p>© QUINTET · {zh(counts.members)}位創作者 × AI 的實作展 · Built with Claude Code</p>
+        <p className="font-display tracking-[0.2em]">{tagline}</p>
       </div>
     </footer>
   );

@@ -1,6 +1,7 @@
 import { projects, formatProjectNumber } from "@/data/projects";
 import type { UniverseProject } from "./geometry";
 import { UniverseExperience } from "./UniverseExperience";
+import { counts, zh } from "@/data/program";
 
 const HEADING_ID = "universe-heading";
 
@@ -50,7 +51,7 @@ export function ProjectUniverseSection() {
           <span className="hidden tabular-nums sm:inline">{String(items.length).padStart(2, "0")} Works</span>
         </p>
         <p lang="zh-Hant" style={{ textWrap: "balance" }} className="max-w-[22rem] text-[0.9375rem] leading-relaxed text-ink-soft md:hidden">
-          五個不同領域的創意作品，共同構成這次計畫的作品宇宙
+          {zh(counts.projects)}個不同領域的創意作品，共同構成這次計畫的作品宇宙
         </p>
       </div>
 

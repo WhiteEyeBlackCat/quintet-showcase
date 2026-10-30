@@ -4,6 +4,7 @@ import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SmoothScroll } from "@/components/layout/SmoothScroll";
 import { introGuardScript } from "@/components/exhibition/intro/guard";
+import { counts, tagline, zh } from "@/data/program";
 import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({
@@ -29,10 +30,10 @@ export const metadata: Metadata = {
   // Shared by link only: keep the exhibition out of search engines.
   robots: { index: false, follow: false },
   title: {
-    default: "QUINTET — 五位創作者 × AI 的實作展",
+    default: `QUINTET — ${zh(counts.members)}位創作者 × AI 的實作展`,
     template: "%s · QUINTET",
   },
-  description: "QUINTET 五重奏：五位成員，五個獨立創意專案。透過 Claude Code 與 AI 輔助開發，將創意構想轉化為實際作品。FIVE MINDS. FIVE BUILDS. ONE AI-POWERED JOURNEY.",
+  description: `QUINTET 五重奏：${zh(counts.members)}位成員，${zh(counts.projects)}個獨立創意專案。透過 Claude Code 與 AI 輔助開發，將創意構想轉化為實際作品。${tagline} ONE AI-POWERED JOURNEY.`,
 };
 
 export const viewport: Viewport = {

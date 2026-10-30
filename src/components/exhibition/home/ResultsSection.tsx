@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { program } from "@/data/program";
+import { counts, en, program } from "@/data/program";
 import { projects, formatProjectNumber } from "@/data/projects";
 import { Reveal } from "@/components/animations/Reveal";
 import { SectionHeader } from "@/components/ui/primitives";
@@ -89,7 +89,7 @@ export function ResultsSection() {
           {/* Categories */}
           <div className="lg:col-span-5">
             <Reveal as="p" className="eyebrow mb-6">
-              FIVE CATEGORIES · 作品類型
+              {en(counts.categories)} CATEGORIES · 作品類型
             </Reveal>
             <Reveal as="ul" stagger className="border-t border-line-strong">
               {projects.map((p) => (
