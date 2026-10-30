@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="SurveyVoiceAI 無效通話調查：ASR、音量、撥號紀錄三步驟">
+<title>SurveyVoiceAI 無效通話調查：ASR、音量、撥號紀錄三步驟</title>
+<defs>
+<linearGradient id="slbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#070914"/><stop offset="1" stop-color="#0b1026"/></linearGradient>
+<radialGradient id="slglow" cx="0.78" cy="0.18" r="0.7"><stop offset="0" stop-color="#F5C451" stop-opacity="0.22"/><stop offset="1" stop-color="#F5C451" stop-opacity="0"/></radialGradient>
+<radialGradient id="slglow2" cx="0.1" cy="0.95" r="0.6"><stop offset="0" stop-color="#FF7A59" stop-opacity="0.16"/><stop offset="1" stop-color="#FF7A59" stop-opacity="0"/></radialGradient>
+<linearGradient id="slacc" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#F5C451"/><stop offset="1" stop-color="#FF7A59"/></linearGradient>
+</defs>
+<rect width="1600" height="1000" fill="url(#slbg)"/><rect width="1600" height="1000" fill="url(#slglow)"/><rect width="1600" height="1000" fill="url(#slglow2)"/>
+<g font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',system-ui,sans-serif">
+<text x="100" y="120" font-size="22" fill="#F5C451" font-weight="600" text-anchor="start" fill-opacity="1" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">ANOMALY · 141 UNREADABLE CALLS</text><text x="100" y="182" font-size="50" fill="#eef0ff" font-weight="700" text-anchor="start" fill-opacity="1">逐字稿幾乎是空的，原因不在模型</text><text x="100" y="232" font-size="26" fill="#b7bcdb" font-weight="400" text-anchor="start" fill-opacity="1">第一階段 1,911 通裡，141 通被判為無效通話；先量訊號，再查撥號紀錄</text>
+<rect x="100" y="320" width="440" height="260" rx="18" fill="#10142b" fill-opacity="0.55" stroke="#F5C451" stroke-opacity="0.75" stroke-width="1.5"/>
+<text x="132" y="380" font-size="30" fill="#eef0ff" font-weight="700" text-anchor="start" fill-opacity="1">01  ASR 現象</text>
+<text x="132" y="450" font-size="26" fill="#F5C451" font-weight="600" text-anchor="start" fill-opacity="1">每分鐘中位數 28 字</text>
+<text x="132" y="500" font-size="22" fill="#8a90b4" font-weight="400" text-anchor="start" fill-opacity="1">正常通話 162 字</text>
+<path d="M544 450 L576 450" stroke="#F5C451" stroke-width="2.5" stroke-opacity="0.8"/><path d="M576 450 l-12 -7 v14z" fill="#F5C451" fill-opacity="0.9"/>
+<rect x="580" y="320" width="440" height="260" rx="18" fill="#10142b" fill-opacity="0.55" stroke="#F5C451" stroke-opacity="0.75" stroke-width="1.5"/>
+<text x="612" y="380" font-size="30" fill="#eef0ff" font-weight="700" text-anchor="start" fill-opacity="1">02  量音量</text>
+<text x="612" y="450" font-size="26" fill="#F5C451" font-weight="600" text-anchor="start" fill-opacity="1">123 通每一秒都 &lt; −50 dBFS</text>
+<text x="612" y="500" font-size="22" fill="#8a90b4" font-weight="400" text-anchor="start" fill-opacity="1">正常通話 RMS 中位數 −17.4</text>
+<path d="M1024 450 L1056 450" stroke="#F5C451" stroke-width="2.5" stroke-opacity="0.8"/><path d="M1056 450 l-12 -7 v14z" fill="#F5C451" fill-opacity="0.9"/>
+<rect x="1060" y="320" width="440" height="260" rx="18" fill="#10142b" fill-opacity="0.55" stroke="#FF7A59" stroke-opacity="0.75" stroke-width="1.5"/>
+<text x="1092" y="380" font-size="30" fill="#eef0ff" font-weight="700" text-anchor="start" fill-opacity="1">03  查撥號紀錄</text>
+<text x="1092" y="450" font-size="26" fill="#FF7A59" font-weight="600" text-anchor="start" fill-opacity="1">123 通案件裡沒有「開始撥號」</text>
+<text x="1092" y="500" font-size="22" fill="#8a90b4" font-weight="400" text-anchor="start" fill-opacity="1">同專案正常通話 168/176 有</text>
+<text x="100" y="680" font-size="28" fill="#eef0ff" font-weight="700" text-anchor="start" fill-opacity="1">結論與產品面</text>
+<text x="100" y="735" font-size="23" fill="#b7bcdb" font-weight="400" text-anchor="start" fill-opacity="1">· ASR 吐出的字是解碼器對著靜音產生的；這類錄音用訊號就能在 ASR 之前一秒內抓到，不必等 GPU。</text>
+<text x="100" y="779" font-size="23" fill="#b7bcdb" font-weight="400" text-anchor="start" fill-opacity="1">· 主體是面訪／測試資料事後鍵入、錄音機剛好在跑；剩下的個案由開發者決定處理方式。</text>
+<text x="100" y="823" font-size="23" fill="#b7bcdb" font-weight="400" text-anchor="start" fill-opacity="1">· 量測腳本直接以 NAS 串流讀檔、不落地；141 通 201 秒跑完。</text>
+<text x="100" y="950" font-size="20" fill="#8a90b4" font-weight="400" text-anchor="start" fill-opacity="1">來源：SurveyVoiceAI STATUS.md〈已查明的異常〉；專案名稱與訪員編號不公開</text>
+</g>
+</svg>

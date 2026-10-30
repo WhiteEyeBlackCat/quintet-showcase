@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="SurveyVoiceAI 量測結果：一致率與試點真實正確率的信賴區間比較">
+<title>SurveyVoiceAI 量測結果：一致率與試點真實正確率的信賴區間比較</title>
+<defs>
+<linearGradient id="rsbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#070914"/><stop offset="1" stop-color="#0b1026"/></linearGradient>
+<radialGradient id="rsglow" cx="0.78" cy="0.18" r="0.7"><stop offset="0" stop-color="#F5C451" stop-opacity="0.22"/><stop offset="1" stop-color="#F5C451" stop-opacity="0"/></radialGradient>
+<radialGradient id="rsglow2" cx="0.1" cy="0.95" r="0.6"><stop offset="0" stop-color="#FF7A59" stop-opacity="0.16"/><stop offset="1" stop-color="#FF7A59" stop-opacity="0"/></radialGradient>
+<linearGradient id="rsacc" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#F5C451"/><stop offset="1" stop-color="#FF7A59"/></linearGradient>
+</defs>
+<rect width="1600" height="1000" fill="url(#rsbg)"/><rect width="1600" height="1000" fill="url(#rsglow)"/><rect width="1600" height="1000" fill="url(#rsglow2)"/>
+<g font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',system-ui,sans-serif">
+<text x="100" y="120" font-size="22" fill="#F5C451" font-weight="600" text-anchor="start" fill-opacity="1" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">MEASUREMENT · STAGE-1 FINE-TUNE</text><text x="100" y="182" font-size="50" fill="#eef0ff" font-weight="700" text-anchor="start" fill-opacity="1">一致率提高了，正確率不一定</text><text x="100" y="232" font-size="26" fill="#b7bcdb" font-weight="400" text-anchor="start" fill-opacity="1">單選題；測試集已排除無效通話（STATUS.md 2026-10-14）</text>
+<text x="100" y="320" font-size="26" fill="#eef0ff" font-weight="600" text-anchor="start" fill-opacity="1">與訪員登錄的一致率（%）</text>
+<text x="100" y="370" font-size="22" fill="#b7bcdb" font-weight="400" text-anchor="start" fill-opacity="1">看過的問卷 · n=4,209</text>
+<rect x="100" y="392" width="224" height="44" rx="8" fill="#8a90b4" fill-opacity="0.35"/>
+<text x="114" y="423" font-size="20" fill="#eef0ff" font-weight="600" text-anchor="start" fill-opacity="1">未訓練</text>
+<text x="338.352" y="424" font-size="26" fill="#eef0ff" font-weight="700" text-anchor="start" fill-opacity="1" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">82.3</text>
+<rect x="100" y="456" width="339" height="44" rx="8" fill="#F5C451" fill-opacity="0.85"/>
+<text x="114" y="487" font-size="20" fill="#04050b" font-weight="600" text-anchor="start" fill-opacity="1">微調後</text>
+<text x="453.2639999999999" y="488" font-size="26" fill="#eef0ff" font-weight="700" text-anchor="start" fill-opacity="1" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">88.6</text>
+<text x="100" y="560" font-size="22" fill="#b7bcdb" font-weight="400" text-anchor="start" fill-opacity="1">沒看過的問卷 · n=4,281</text>
+<rect x="100" y="582" width="212" height="44" rx="8" fill="#8a90b4" fill-opacity="0.35"/>
+<text x="114" y="613" font-size="20" fill="#eef0ff" font-weight="600" text-anchor="start" fill-opacity="1">未訓練</text>
+<text x="325.5839999999999" y="614" font-size="26" fill="#eef0ff" font-weight="700" text-anchor="start" fill-opacity="1" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">81.6</text>
+<rect x="100" y="646" width="308" height="44" rx="8" fill="#F5C451" fill-opacity="0.85"/>
+<text x="114" y="677" font-size="20" fill="#04050b" font-weight="600" text-anchor="start" fill-opacity="1">微調後</text>
+<text x="422.25600000000003" y="678" font-size="26" fill="#eef0ff" font-weight="700" text-anchor="start" fill-opacity="1" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">86.9</text>
+<text x="100" y="790" font-size="18" fill="#8a90b4" font-weight="400" text-anchor="start" fill-opacity="1">橫軸自 70% 起算</text>
+<text x="860" y="320" font-size="26" fill="#eef0ff" font-weight="600" text-anchor="start" fill-opacity="1">試點真實正確率（25 通，95% CI）</text>
+<text x="860" y="390" font-size="22" fill="#b7bcdb" font-weight="400" text-anchor="start" fill-opacity="1">未訓練</text>
+<path d="M942 420 H1108" stroke="#8a90b4" stroke-width="5" stroke-linecap="round" stroke-opacity="0.8"/>
+<circle cx="1034" cy="420" r="11" fill="#8a90b4"/>
+<text x="1124.0" y="429" font-size="22" fill="#eef0ff" font-weight="500" text-anchor="start" fill-opacity="1" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">85.9  [80.1, 90.5]</text>
+<text x="860" y="500" font-size="22" fill="#b7bcdb" font-weight="400" text-anchor="start" fill-opacity="1">微調後</text>
+<path d="M994 530 H1164" stroke="#F5C451" stroke-width="5" stroke-linecap="round" stroke-opacity="0.8"/>
+<circle cx="1094" cy="530" r="11" fill="#F5C451"/>
+<text x="1180.0" y="539" font-size="22" fill="#eef0ff" font-weight="500" text-anchor="start" fill-opacity="1" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">89.6  [83.4, 94.0]</text>
+<text x="860" y="610" font-size="22" fill="#b7bcdb" font-weight="400" text-anchor="start" fill-opacity="1">訪員自己</text>
+<path d="M1058 640 H1206" stroke="#FF7A59" stroke-width="5" stroke-linecap="round" stroke-opacity="0.8"/>
+<circle cx="1143" cy="640" r="11" fill="#FF7A59"/>
+<text x="1221.6" y="649" font-size="22" fill="#eef0ff" font-weight="500" text-anchor="start" fill-opacity="1" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">92.7  [87.4, 96.6]</text>
+<path d="M860 730 v10" stroke="#8a90b4"/>
+<text x="860.0" y="768" font-size="18" fill="#8a90b4" font-weight="400" text-anchor="middle" fill-opacity="1" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">75</text>
+<path d="M940 730 v10" stroke="#8a90b4"/>
+<text x="940.0" y="768" font-size="18" fill="#8a90b4" font-weight="400" text-anchor="middle" fill-opacity="1" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">80</text>
+<path d="M1020 730 v10" stroke="#8a90b4"/>
+<text x="1020.0" y="768" font-size="18" fill="#8a90b4" font-weight="400" text-anchor="middle" fill-opacity="1" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">85</text>
+<path d="M1100 730 v10" stroke="#8a90b4"/>
+<text x="1100.0" y="768" font-size="18" fill="#8a90b4" font-weight="400" text-anchor="middle" fill-opacity="1" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">90</text>
+<path d="M1180 730 v10" stroke="#8a90b4"/>
+<text x="1180.0" y="768" font-size="18" fill="#8a90b4" font-weight="400" text-anchor="middle" fill-opacity="1" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">95</text>
+<path d="M1260 730 v10" stroke="#8a90b4"/>
+<text x="1260.0" y="768" font-size="18" fill="#8a90b4" font-weight="400" text-anchor="middle" fill-opacity="1" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">100</text>
+<path d="M860 730 H1260" stroke="#8a90b4" stroke-opacity="0.6"/>
+<rect x="100" y="830" width="1400" height="80" rx="18" fill="#10142b" fill-opacity="0.3" stroke="#F5C451" stroke-opacity="0.75" stroke-width="1.5"/>
+<text x="130" y="880" font-size="23" fill="#eef0ff" font-weight="400" text-anchor="start" fill-opacity="1">三條區間全部重疊：25 通分不出高下。一致率的提升約是真實正確率提升的 2 倍以上——一致率高 ≠ 正確率高。</text>
+<text x="100" y="950" font-size="20" fill="#8a90b4" font-weight="400" text-anchor="start" fill-opacity="1">來源：SurveyVoiceAI .scratch/survey-voice-ai/STATUS.md（數字以 ticket 16 為準）</text>
+</g>
+</svg>

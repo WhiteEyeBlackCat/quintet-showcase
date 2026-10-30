@@ -4,9 +4,10 @@ import { project02 } from "./project-02";
 import { project03 } from "./project-03";
 import { project04 } from "./project-04";
 import { project05 } from "./project-05";
+import { project06 } from "./project-06";
 
 /** All projects, ordered by `number`. */
-export const projects: Project[] = [project01, project02, project03, project04, project05].sort(
+export const projects: Project[] = [project01, project02, project03, project04, project05, project06].sort(
   (a, b) => a.number - b.number,
 );
 

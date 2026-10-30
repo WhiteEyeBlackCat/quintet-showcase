@@ -113,7 +113,7 @@ export function HeroSection({ project, prev, next, links }: HeroSectionProps) {
                 as="h1"
                 id="project-title"
                 immediate
-                lines={[project.title]}
+                lines={project.titleLines ?? [project.title]}
                 className="font-display text-5xl font-medium leading-[1.12] sm:text-6xl xl:text-7xl"
                 lineClassName="text-display-gradient"
               />

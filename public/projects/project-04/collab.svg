@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="人機分工圖：開發者提供目標、構想與決策，Claude Code 提供資料證據、技術選項與執行">
+<title>人機分工圖：開發者提供目標、構想與決策，Claude Code 提供資料證據、技術選項與執行</title>
+<defs>
+<linearGradient id="cbbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#070914"/><stop offset="1" stop-color="#0b1026"/></linearGradient>
+<radialGradient id="cbglow" cx="0.78" cy="0.18" r="0.7"><stop offset="0" stop-color="#F5C451" stop-opacity="0.22"/><stop offset="1" stop-color="#F5C451" stop-opacity="0"/></radialGradient>
+<radialGradient id="cbglow2" cx="0.1" cy="0.95" r="0.6"><stop offset="0" stop-color="#FF7A59" stop-opacity="0.16"/><stop offset="1" stop-color="#FF7A59" stop-opacity="0"/></radialGradient>
+<linearGradient id="cbacc" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#F5C451"/><stop offset="1" stop-color="#FF7A59"/></linearGradient>
+</defs>
+<rect width="1600" height="1000" fill="url(#cbbg)"/><rect width="1600" height="1000" fill="url(#cbglow)"/><rect width="1600" height="1000" fill="url(#cbglow2)"/>
+<g font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',system-ui,sans-serif">
+<text x="100" y="120" font-size="22" fill="#F5C451" font-weight="600" text-anchor="start" fill-opacity="1" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">HOW IT WAS BUILT · HUMAN × CLAUDE CODE</text><text x="100" y="182" font-size="50" fill="#eef0ff" font-weight="700" text-anchor="start" fill-opacity="1">人定方向，Claude Code 給證據與執行</text><text x="100" y="232" font-size="26" fill="#b7bcdb" font-weight="400" text-anchor="start" fill-opacity="1">每個重大決策：人提出 → AI 查證並列出選項 → 人拍板 → AI 實作與量測</text>
+<rect x="100" y="300" width="660" height="520" rx="18" fill="#10142b" fill-opacity="0.55" stroke="#FF7A59" stroke-opacity="0.75" stroke-width="1.5"/>
+<text x="140" y="365" font-size="34" fill="#eef0ff" font-weight="700" text-anchor="start" fill-opacity="1">開發者</text>
+<text x="140" y="410" font-size="24" fill="#FF7A59" font-weight="600" text-anchor="start" fill-opacity="1">目標 · 構想 · 決策</text>
+<path d="M140 440 H720" stroke="#fff" stroke-opacity="0.1"/>
+<circle cx="152" cy="487" r="6" fill="#FF7A59"/>
+<text x="174" y="495" font-size="24" fill="#b7bcdb" font-weight="400" text-anchor="start" fill-opacity="1">提出目標：每一通錄音都要被稽核</text>
+<circle cx="152" cy="553" r="6" fill="#FF7A59"/>
+<text x="174" y="561" font-size="24" fill="#b7bcdb" font-weight="400" text-anchor="start" fill-opacity="1">設定門檻：警示要有 70% 可信度</text>
+<circle cx="152" cy="619" r="6" fill="#FF7A59"/>
+<text x="174" y="627" font-size="24" fill="#b7bcdb" font-weight="400" text-anchor="start" fill-opacity="1">現場觀察：訪員會口頭確認選項</text>
+<circle cx="152" cy="685" r="6" fill="#FF7A59"/>
+<text x="174" y="693" font-size="24" fill="#b7bcdb" font-weight="400" text-anchor="start" fill-opacity="1">親耳複聽：抓出閩南語被轉成國語</text>
+<circle cx="152" cy="751" r="6" fill="#FF7A59"/>
+<text x="174" y="759" font-size="24" fill="#b7bcdb" font-weight="400" text-anchor="start" fill-opacity="1">拍板：複聽清單、資料不出本機</text>
+<rect x="840" y="300" width="660" height="520" rx="18" fill="#10142b" fill-opacity="0.55" stroke="#F5C451" stroke-opacity="0.75" stroke-width="1.5"/>
+<text x="880" y="365" font-size="34" fill="#eef0ff" font-weight="700" text-anchor="start" fill-opacity="1">Claude Code · 資深工程師</text>
+<text x="880" y="410" font-size="24" fill="#F5C451" font-weight="600" text-anchor="start" fill-opacity="1">資料證據 · 技術選項 · 執行</text>
+<path d="M880 440 H1460" stroke="#fff" stroke-opacity="0.1"/>
+<circle cx="892" cy="487" r="6" fill="#F5C451"/>
+<text x="914" y="495" font-size="24" fill="#b7bcdb" font-weight="400" text-anchor="start" fill-opacity="1">試算：特異度 95% 時只有 26.9% 警示為真</text>
+<circle cx="892" cy="553" r="6" fill="#F5C451"/>
+<text x="914" y="561" font-size="24" fill="#b7bcdb" font-weight="400" text-anchor="start" fill-opacity="1">三個選項 × 七個面向的比較表</text>
+<circle cx="892" cy="619" r="6" fill="#F5C451"/>
+<text x="914" y="627" font-size="24" fill="#b7bcdb" font-weight="400" text-anchor="start" fill-opacity="1">量測錄音格式、確認題目時間對得上</text>
+<circle cx="892" cy="685" r="6" fill="#F5C451"/>
+<text x="914" y="693" font-size="24" fill="#b7bcdb" font-weight="400" text-anchor="start" fill-opacity="1">找出聽不清錄音的指標、統一簡繁字</text>
+<circle cx="892" cy="751" r="6" fill="#F5C451"/>
+<text x="914" y="759" font-size="24" fill="#b7bcdb" font-weight="400" text-anchor="start" fill-opacity="1">模型訓練與評估、標註頁與督導看板</text>
+<path d="M770 520 L830 520" stroke="#F5C451" stroke-width="2.5" stroke-opacity="0.8"/><path d="M830 520 l-12 -7 v14z" fill="#F5C451" fill-opacity="0.9"/>
+<path d="M830 600 L770 600" stroke="#FF7A59" stroke-width="2.5" stroke-opacity="0.8"/><path d="M770 600 l12 -7 v14z" fill="#FF7A59"/>
+<text x="800" y="500" font-size="18" fill="#8a90b4" font-weight="400" text-anchor="middle" fill-opacity="1">需求</text>
+<text x="800" y="640" font-size="18" fill="#8a90b4" font-weight="400" text-anchor="middle" fill-opacity="1">證據</text>
+<text x="100" y="880" font-size="24" fill="#eef0ff" font-weight="400" text-anchor="start" fill-opacity="1">每個決策都寫成紀錄文件；沒有可靠出處的數字標明「缺口」，量測一律附方法與樣本數。</text>
+<text x="100" y="950" font-size="20" fill="#8a90b4" font-weight="400" text-anchor="start" fill-opacity="1">來源：SurveyVoiceAI CLAUDE.md、ticket 13 / 14 / 15、STATUS.md</text>
+</g>
+</svg>
