@@ -6,6 +6,7 @@ import { PlaceholderBadge, SectionHeader } from "@/components/ui/primitives";
 import { ArrowIcon } from "@/components/ui/Button";
 import { cn } from "@/lib/utils/cn";
 import { MemberAvatar } from "./team/MemberAvatar";
+import { counts, zh } from "@/data/program";
 
 /** 07 · The five creators, laid out like labelled works on an exhibition wall. */
 export function TeamSection() {
@@ -23,7 +24,7 @@ export function TeamSection() {
             index="06"
             eyebrow="OUR TEAM"
             title="創作者"
-            description="五位成員，各自帶著一個構想，與 Claude Code 一起完成作品。"
+            description={`${zh(counts.members)}位成員，各自帶著自己的構想，與 Claude Code 一起完成作品。`}
           />
           {members.some((m) => m.isPlaceholder) && (
             <PlaceholderBadge

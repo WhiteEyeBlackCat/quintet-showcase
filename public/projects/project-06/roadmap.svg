@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="學習規劃流程：寫下研究目標、挑出下一個單元、只找需要的論文、先問後講、隔一段時間再考，過關才前進">
+<title>學習規劃流程：寫下研究目標、挑出下一個單元、只找需要的論文、先問後講、隔一段時間再考，過關才前進</title>
+<rect width="1600" height="1000" fill="#F2ECDF"/>
+<g font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',system-ui,sans-serif">
+<text x="800" y="92" font-size="54" fill="#2C1D12" font-weight="800" text-anchor="middle" fill-opacity="1">依研究目標安排學習順序</text><text x="800" y="140" font-size="24" fill="#6B4C33" font-weight="400" text-anchor="middle" fill-opacity="1">/master-mentor plan · 一次只學一個單元，需要時才找論文</text>
+<circle cx="230" cy="370" r="106" fill="#FAF5EB" stroke="#2C1D12" stroke-width="2.5"/>
+<g transform="translate(201.2 311.2) scale(2.4)" fill="none" stroke="#2C1D12" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="13" r="9"/><circle cx="11" cy="13" r="5"/><circle cx="11" cy="13" r="1"/><path d="M11 13l9-9M17 4h3v3"/></g><text x="230" y="400" font-size="22" fill="#2C1D12" font-weight="700" text-anchor="middle" fill-opacity="1">寫下研究目標</text><text x="230" y="426" font-size="15" fill="#6B4C33" font-weight="500" text-anchor="middle" fill-opacity="1">與「懂了」的標準</text>
+<path d="M336 370 H420" stroke="#2C1D12" stroke-width="2.5"/><path d="M424 370 l-14 -7 v14z" fill="#2C1D12"/>
+<circle cx="530" cy="370" r="106" fill="#FAF5EB" stroke="#2C1D12" stroke-width="2.5"/>
+<g transform="translate(501.2 311.2) scale(2.4)" fill="none" stroke="#2C1D12" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6h12M9 12h12M9 18h12"/><path d="M3.5 5l1-1v4M3 11.2a1 1 0 1 1 1.6 1L3 14h2M3 17h2l-1 1.2a1 1 0 1 1-1 1.3"/></g><text x="530" y="400" font-size="22" fill="#2C1D12" font-weight="700" text-anchor="middle" fill-opacity="1">挑出下一個單元</text><text x="530" y="426" font-size="15" fill="#6B4C33" font-weight="500" text-anchor="middle" fill-opacity="1">前置知識已具備、最卡住</text>
+<path d="M636 370 H720" stroke="#2C1D12" stroke-width="2.5"/><path d="M724 370 l-14 -7 v14z" fill="#2C1D12"/>
+<circle cx="830" cy="370" r="106" fill="#FAF5EB" stroke="#2C1D12" stroke-width="2.5"/>
+<g transform="translate(801.2 311.2) scale(2.4)" fill="none" stroke="#2C1D12" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h5"/><path d="M14 2l5 5h-5z"/><circle cx="15" cy="15" r="3.5"/><path d="M17.5 17.5L21 21"/></g><text x="830" y="400" font-size="22" fill="#2C1D12" font-weight="700" text-anchor="middle" fill-opacity="1">只找需要的論文</text><text x="830" y="426" font-size="15" fill="#6B4C33" font-weight="500" text-anchor="middle" fill-opacity="1">lorevore 整理成 wiki</text>
+<path d="M936 370 H1020" stroke="#2C1D12" stroke-width="2.5"/><path d="M1024 370 l-14 -7 v14z" fill="#2C1D12"/>
+<circle cx="1130" cy="370" r="106" fill="#FAF5EB" stroke="#2C1D12" stroke-width="2.5"/>
+<g transform="translate(1101.2 311.2) scale(2.4)" fill="none" stroke="#2C1D12" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h10a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H6l-3 2.5V11H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M12 15c2-1.3 4.5-1.3 5.5 0c1-1.3 3.5-1.3 5.5 0v7c-2-1.3-4.5-1.3-5.5 0c-1-1.3-3.5-1.3-5.5 0z"/><path d="M17.5 15v7"/></g><text x="1130" y="400" font-size="22" fill="#2C1D12" font-weight="700" text-anchor="middle" fill-opacity="1">先問後講</text><text x="1130" y="426" font-size="15" fill="#6B4C33" font-weight="500" text-anchor="middle" fill-opacity="1">預測、解釋、比較</text>
+<path d="M1236 370 H1320" stroke="#2C1D12" stroke-width="2.5"/><path d="M1324 370 l-14 -7 v14z" fill="#2C1D12"/>
+<circle cx="1430" cy="370" r="106" fill="#FAF5EB" stroke="#2C1D12" stroke-width="2.5"/>
+<g transform="translate(1401.2 311.2) scale(2.4)" fill="none" stroke="#2C1D12" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.2 9a3 3 0 0 1 5.8 1c0 2-3 2.5-3 4.5"/><path d="M12 18h.5" stroke-width="2.6"/></g><text x="1430" y="400" font-size="22" fill="#2C1D12" font-weight="700" text-anchor="middle" fill-opacity="1">隔一段時間再考</text><text x="1430" y="426" font-size="15" fill="#6B4C33" font-weight="500" text-anchor="middle" fill-opacity="1">不複習、不給提示</text>
+<path d="M1390 468 C1360 580 1160 580 1130 490" stroke="#A83A2E" stroke-width="3" fill="none"/><path d="M1130 476 l-8 15 h16z" fill="#A83A2E"/>
+<text x="1280.0" y="592" font-size="22" fill="#A83A2E" font-weight="700" text-anchor="middle" fill-opacity="1">未過關：排回複習</text>
+<path d="M1470 468 C1490 790 530 790 530 490" stroke="#2C1D12" stroke-width="3" fill="none"/><path d="M530 476 l-8 15 h16z" fill="#2C1D12"/>
+<text x="1000" y="755" font-size="22" fill="#2C1D12" font-weight="700" text-anchor="middle" fill-opacity="1">過關：前進到下一個單元</text>
+<text x="800" y="890" font-size="23" fill="#6B4C33" font-weight="500" text-anchor="middle" fill-opacity="1">先學什麼由研究目標決定；份量控制在一次讀得完的範圍，順序依每次再考的結果隨時調整。</text>
+</g>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="SurveyVoiceAI 基礎率試算：特異度與警示可信度的關係">
+<title>SurveyVoiceAI 基礎率試算：特異度與警示可信度的關係</title>
+<defs>
+<linearGradient id="brbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#070914"/><stop offset="1" stop-color="#0b1026"/></linearGradient>
+<radialGradient id="brglow" cx="0.78" cy="0.18" r="0.7"><stop offset="0" stop-color="#F5C451" stop-opacity="0.22"/><stop offset="1" stop-color="#F5C451" stop-opacity="0"/></radialGradient>
+<radialGradient id="brglow2" cx="0.1" cy="0.95" r="0.6"><stop offset="0" stop-color="#FF7A59" stop-opacity="0.16"/><stop offset="1" stop-color="#FF7A59" stop-opacity="0"/></radialGradient>
+<linearGradient id="bracc" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#F5C451"/><stop offset="1" stop-color="#FF7A59"/></linearGradient>
+</defs>
+<rect width="1600" height="1000" fill="url(#brbg)"/><rect width="1600" height="1000" fill="url(#brglow)"/><rect width="1600" height="1000" fill="url(#brglow2)"/>
+<g font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',system-ui,sans-serif">
+<text x="100" y="120" font-size="22" fill="#F5C451" font-weight="600" text-anchor="start" fill-opacity="1" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">DESIGN TARGET · TICKET 13</text><text x="100" y="182" font-size="50" fill="#eef0ff" font-weight="700" text-anchor="start" fill-opacity="1">警示的價值由基礎率決定</text><text x="100" y="232" font-size="26" fill="#b7bcdb" font-weight="400" text-anchor="start" fill-opacity="1">假設訪員真實錯誤率 2%、偵測靈敏度 90%，每 10,000 題</text>
+<text x="160" y="330" font-size="24" fill="#8a90b4" font-weight="600" text-anchor="start" fill-opacity="1">偵測特異度</text>
+<text x="520" y="330" font-size="24" fill="#8a90b4" font-weight="600" text-anchor="start" fill-opacity="1">真陽性</text>
+<text x="760" y="330" font-size="24" fill="#8a90b4" font-weight="600" text-anchor="start" fill-opacity="1">假陽性</text>
+<text x="1000" y="330" font-size="24" fill="#8a90b4" font-weight="600" text-anchor="start" fill-opacity="1">警示可信度（PPV）</text>
+<path d="M100 360 H1500" stroke="#fff" stroke-opacity="0.08"/>
+<text x="160" y="420" font-size="40" fill="#eef0ff" font-weight="700" text-anchor="start" fill-opacity="1" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">95%</text>
+<text x="520" y="420" font-size="36" fill="#b7bcdb" font-weight="400" text-anchor="start" fill-opacity="1" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">180</text>
+<text x="760" y="420" font-size="36" fill="#FF7A59" font-weight="600" text-anchor="start" fill-opacity="1" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">490</text>
+<rect x="1000" y="384" width="113" height="46" rx="8" fill="#F5C451" fill-opacity="0.48"/>
+<text x="1126.98" y="420" font-size="32" fill="#eef0ff" font-weight="700" text-anchor="start" fill-opacity="1" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">26.9%</text>
+<path d="M100 480 H1500" stroke="#fff" stroke-opacity="0.08"/>
+<text x="160" y="540" font-size="40" fill="#eef0ff" font-weight="700" text-anchor="start" fill-opacity="1" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">99%</text>
+<text x="520" y="540" font-size="36" fill="#b7bcdb" font-weight="400" text-anchor="start" fill-opacity="1" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">180</text>
+<text x="760" y="540" font-size="36" fill="#b7bcdb" font-weight="400" text-anchor="start" fill-opacity="1" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">98</text>
+<rect x="1000" y="504" width="272" height="46" rx="8" fill="#F5C451" fill-opacity="0.67"/>
+<text x="1285.74" y="540" font-size="32" fill="#eef0ff" font-weight="700" text-anchor="start" fill-opacity="1" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">64.7%</text>
+<path d="M100 600 H1500" stroke="#fff" stroke-opacity="0.08"/>
+<text x="160" y="660" font-size="40" fill="#eef0ff" font-weight="700" text-anchor="start" fill-opacity="1" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">99.9%</text>
+<text x="520" y="660" font-size="36" fill="#b7bcdb" font-weight="400" text-anchor="start" fill-opacity="1" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">180</text>
+<text x="760" y="660" font-size="36" fill="#b7bcdb" font-weight="400" text-anchor="start" fill-opacity="1" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">9.8</text>
+<rect x="1000" y="624" width="398" height="46" rx="8" fill="#F5C451" fill-opacity="0.82"/>
+<text x="1412.16" y="660" font-size="32" fill="#eef0ff" font-weight="700" text-anchor="start" fill-opacity="1" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">94.8%</text>
+<rect x="100" y="760" width="1400" height="130" rx="18" fill="#10142b" fill-opacity="0.3" stroke="#FF7A59" stroke-opacity="0.75" stroke-width="1.5"/>
+<text x="140" y="815" font-size="26" fill="#eef0ff" font-weight="600" text-anchor="start" fill-opacity="1">95% 特異度的偵測器，發出的警示有 73% 是誤報，督導幾週內就不會再看。</text>
+<text x="140" y="860" font-size="24" fill="#b7bcdb" font-weight="400" text-anchor="start" fill-opacity="1">→ 改做複聽清單：只調整督導本來就在做的抽聽順序，督導的確認與駁回再拿來改進模型。</text>
+<text x="100" y="950" font-size="20" fill="#8a90b4" font-weight="400" text-anchor="start" fill-opacity="1">來源：SurveyVoiceAI ticket 13〈Objection 1 — the base rate decides the product〉</text>
+</g>
+</svg>

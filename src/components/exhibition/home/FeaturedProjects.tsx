@@ -3,6 +3,7 @@ import { SectionHeader } from "@/components/ui/primitives";
 import { ButtonLink, ArrowIcon } from "@/components/ui/Button";
 import { Reveal } from "@/components/animations/Reveal";
 import { FeaturedPanel } from "@/components/projects/gallery/FeaturedPanel";
+import { counts, zh } from "@/data/program";
 
 /** Homepage gallery: five alternating editorial panels. */
 export function FeaturedProjects() {
@@ -15,7 +16,7 @@ export function FeaturedProjects() {
             id="gallery-title"
             index="03"
             eyebrow="Selected Works"
-            title="五件作品，五種探索"
+            title={`${zh(counts.projects)}件作品，${zh(counts.categories)}種探索`}
             description="每件作品都由一位成員獨立完成，以 Claude Code 協助開發。"
           />
         </Reveal>

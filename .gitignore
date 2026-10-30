@@ -45,3 +45,7 @@ next-env.d.ts
 
 # Private guides shared directly with members (not published)
 /docs/
+
+# local notes for Claude Code (not published)
+CLAUDE.md
+drafts/

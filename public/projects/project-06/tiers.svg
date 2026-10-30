@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="wiki 頁的三種深度：draft、middle、deep 各自包含的內容與適用的論文">
+<title>wiki 頁的三種深度：draft、middle、deep 各自包含的內容與適用的論文</title>
+<rect width="1600" height="1000" fill="#F2ECDF"/>
+<g font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',system-ui,sans-serif">
+<text x="800" y="92" font-size="54" fill="#2C1D12" font-weight="800" text-anchor="middle" fill-opacity="1">每篇論文，依重要程度決定寫多深</text><text x="800" y="140" font-size="24" fill="#6B4C33" font-weight="400" text-anchor="middle" fill-opacity="1">One paper, three depths · middle 包含 draft 的內容，deep 包含 middle 的內容</text>
+<rect x="110" y="420" width="420" height="380" rx="12" fill="#FAF5EB" stroke="#B89B7A" stroke-width="2.5"/>
+<g transform="translate(145.2 453.2) scale(2.4)" fill="none" stroke="#2C1D12" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h8M8 9h3"/></g>
+<text x="222" y="482" font-size="36" fill="#2C1D12" font-weight="800" text-anchor="start" fill-opacity="1" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">draft</text>
+<text x="222" y="516" font-size="21" fill="#6B4C33" font-weight="600" text-anchor="start" fill-opacity="1">適合：相關研究</text>
+<path d="M142 544 H498" stroke="#B89B7A" stroke-width="1.5"/>
+<text x="150" y="590" font-size="22" fill="#2C1D12" font-weight="400" text-anchor="start" fill-opacity="1">一句話定位</text>
+<text x="150" y="630" font-size="22" fill="#2C1D12" font-weight="400" text-anchor="start" fill-opacity="1">摘要</text>
+<text x="150" y="670" font-size="22" fill="#2C1D12" font-weight="400" text-anchor="start" fill-opacity="1">用途與產出</text>
+<text x="150" y="710" font-size="22" fill="#2C1D12" font-weight="400" text-anchor="start" fill-opacity="1">核心主張</text>
+<text x="150" y="750" font-size="22" fill="#2C1D12" font-weight="400" text-anchor="start" fill-opacity="1">與其他研究的差異</text>
+<path d="M538 400 L572 360" stroke="#A83A2E" stroke-width="3"/><path d="M576 354 l-15 5 l9 10z" fill="#A83A2E"/>
+<rect x="580" y="330" width="420" height="470" rx="12" fill="#FAF5EB" stroke="#B89B7A" stroke-width="2.5"/>
+<g transform="translate(615.2 363.2) scale(2.4)" fill="none" stroke="#2C1D12" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2.5"/><circle cx="12" cy="13" r="2.5"/><circle cx="5" cy="19" r="2.5"/><circle cx="19" cy="19" r="2.5"/><path d="M12 7.5v3M10 15l-3.2 2.4M14 15l3.2 2.4"/></g>
+<text x="692" y="392" font-size="36" fill="#2C1D12" font-weight="800" text-anchor="start" fill-opacity="1" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">middle</text>
+<text x="692" y="426" font-size="21" fill="#6B4C33" font-weight="600" text-anchor="start" fill-opacity="1">適合：背景理論與方法</text>
+<path d="M612 454 H968" stroke="#B89B7A" stroke-width="1.5"/>
+<text x="620" y="500" font-size="22" fill="#2C1D12" font-weight="400" text-anchor="start" fill-opacity="1">+ 方法與公式（附符號表）</text>
+<text x="620" y="540" font-size="22" fill="#2C1D12" font-weight="400" text-anchor="start" fill-opacity="1">+ 圖表解讀</text>
+<text x="620" y="580" font-size="22" fill="#2C1D12" font-weight="400" text-anchor="start" fill-opacity="1">+ 限制</text>
+<text x="620" y="620" font-size="22" fill="#2C1D12" font-weight="400" text-anchor="start" fill-opacity="1">+ 如何驗證</text>
+<path d="M1008 310 L1042 270" stroke="#A83A2E" stroke-width="3"/><path d="M1046 264 l-15 5 l9 10z" fill="#A83A2E"/>
+<rect x="1050" y="240" width="420" height="560" rx="12" fill="#2C1D12" stroke="#2C1D12" stroke-width="2.5"/>
+<g transform="translate(1085.2 273.2) scale(2.4)" fill="none" stroke="#FAF5EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h5"/><path d="M14 2l5 5h-5z"/><circle cx="15" cy="15" r="3.5"/><path d="M17.5 17.5L21 21"/></g>
+<text x="1162" y="302" font-size="36" fill="#FAF5EB" font-weight="800" text-anchor="start" fill-opacity="1" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">deep</text>
+<text x="1162" y="336" font-size="21" fill="#F2ECDF" font-weight="600" text-anchor="start" fill-opacity="1">適合：論文的核心依據</text>
+<path d="M1082 364 H1438" stroke="#B89B7A" stroke-width="1.5"/>
+<text x="1090" y="410" font-size="22" fill="#FAF5EB" font-weight="400" text-anchor="start" fill-opacity="1">+ 每張圖逐格判讀</text>
+<text x="1090" y="450" font-size="22" fill="#FAF5EB" font-weight="400" text-anchor="start" fill-opacity="1">+ 完整推導</text>
+<text x="1090" y="490" font-size="22" fill="#FAF5EB" font-weight="400" text-anchor="start" fill-opacity="1">+ 寫作筆記</text>
+<text x="1090" y="530" font-size="22" fill="#FAF5EB" font-weight="400" text-anchor="start" fill-opacity="1">+ 測驗題</text>
+<text x="1090" y="570" font-size="22" fill="#FAF5EB" font-weight="400" text-anchor="start" fill-opacity="1">+ 原文逐字引用</text>
+<text x="800" y="880" font-size="23" fill="#A83A2E" font-weight="700" text-anchor="middle" fill-opacity="1">沒打開過的圖不寫，AI 也不能憑記憶補內容：每段文字都要對得到頁碼、圖號或原文引用。</text>
+</g>
+</svg>

@@ -4,8 +4,8 @@ import { SectionHeader } from "@/components/ui/primitives";
 
 export function OverviewSection({ project }: { project: Project }) {
   const facets = [
-    { label: "為什麼", en: "WHY", body: project.motivation },
-    { label: "給誰", en: "FOR WHOM", body: project.audience },
+    { label: "專案動機", en: "WHY", body: project.motivation },
+    { label: "目標客群", en: "FOR WHOM", body: project.audience },
     { label: "解決什麼問題", en: "PROBLEM", body: project.problem },
   ].filter((f): f is { label: string; en: string; body: string } => !!f.body);
 
@@ -17,7 +17,7 @@ export function OverviewSection({ project }: { project: Project }) {
         </div>
         <div className="flex flex-col gap-14 lg:col-span-8">
           <Reveal>
-            <p className="max-w-[38rem] font-display text-xl leading-[1.75] text-ink sm:text-2xl sm:leading-[1.7]">
+            <p className="max-w-[38rem] whitespace-pre-line font-display text-xl leading-[1.75] text-ink sm:text-2xl sm:leading-[1.7]">
               {project.description}
             </p>
           </Reveal>

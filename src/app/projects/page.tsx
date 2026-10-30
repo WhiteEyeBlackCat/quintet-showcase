@@ -5,10 +5,11 @@ import { Reveal } from "@/components/animations/Reveal";
 import { RevealHeading } from "@/components/animations/RevealHeading";
 import { ButtonLink, ArrowIcon } from "@/components/ui/Button";
 import { ProjectIndex } from "@/components/projects/gallery/ProjectIndex";
+import { counts, zh } from "@/data/program";
 
 export const metadata: Metadata = {
   title: "所有專案",
-  description: "QUINTET 作品展：五位成員、五件以 Claude Code 輔助完成的作品。",
+  description: `QUINTET 作品展：${zh(counts.members)}位成員、${zh(counts.projects)}件以 Claude Code 輔助完成的作品。`,
 };
 
 export default function ProjectsPage() {

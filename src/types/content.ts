@@ -99,6 +99,8 @@ export interface Project {
   number: number;
 
   title: string;
+  /** Optional manual line breaks for the detail-page hero headline; defaults to [title]. */
+  titleLines?: string[];
   /** English title, used as subtitle / visual hierarchy. */
   subtitle?: string;
 

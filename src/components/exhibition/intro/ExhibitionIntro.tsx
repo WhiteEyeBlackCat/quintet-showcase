@@ -4,6 +4,7 @@ import { useLayoutEffect, useRef } from "react";
 import { gsap, motion, prefersReducedMotion, isLowPowerDevice } from "@/lib/motion";
 
 import { SEEN_KEY } from "./guard";
+import { tagline } from "@/data/program";
 
 /**
  * Runs while the document is parsed (before first paint) so returning visitors
@@ -344,7 +345,7 @@ export function ExhibitionIntro() {
               INITIALIZING EXHIBITION...
             </p>
             <p className="avc-t2 absolute inset-x-0 text-[11px] font-medium tracking-[0.34em] text-ink md:text-sm md:tracking-[0.5em]">
-              FIVE MINDS. FIVE BUILDS.
+              {tagline}
             </p>
           </div>
           <div className="avc-barwrap mt-5 flex w-[min(62vw,16rem)] items-center gap-3">
@@ -359,7 +360,7 @@ export function ExhibitionIntro() {
         </div>
 
         <p className="avc-cap font-display absolute inset-x-0 bottom-8 px-6 text-center text-[9px] tracking-[0.3em] text-ink-mute md:bottom-10 md:text-[10px] md:tracking-[0.4em]">
-          FIVE MINDS. FIVE BUILDS. ONE AI-POWERED CREATIVE JOURNEY.
+          {tagline} ONE AI-POWERED CREATIVE JOURNEY.
         </p>
       </div>
     </>

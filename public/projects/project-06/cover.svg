@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="mentor 封面：三個核心做法與個人論文 wiki 的知識網示意">
+<title>mentor 封面：三個核心做法與個人論文 wiki 的知識網示意</title>
+<defs>
+<linearGradient id="mcbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#070914"/><stop offset="1" stop-color="#0b1026"/></linearGradient>
+<radialGradient id="mcglow" cx="0.78" cy="0.18" r="0.7"><stop offset="0" stop-color="#E9D8A6" stop-opacity="0.22"/><stop offset="1" stop-color="#E9D8A6" stop-opacity="0"/></radialGradient>
+<radialGradient id="mcglow2" cx="0.1" cy="0.95" r="0.6"><stop offset="0" stop-color="#8B7CFF" stop-opacity="0.16"/><stop offset="1" stop-color="#8B7CFF" stop-opacity="0"/></radialGradient>
+<linearGradient id="mcacc" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#E9D8A6"/><stop offset="1" stop-color="#8B7CFF"/></linearGradient>
+</defs>
+<rect width="1600" height="1000" fill="url(#mcbg)"/><rect width="1600" height="1000" fill="url(#mcglow)"/><rect width="1600" height="1000" fill="url(#mcglow2)"/>
+<g font-family="'Noto Sans TC','PingFang TC','Microsoft JhengHei',system-ui,sans-serif">
+<text x="120" y="170" font-size="24" fill="#E9D8A6" font-weight="600" text-anchor="start" fill-opacity="1" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">MENTOR · A CLAUDE CODE SKILL</text>
+<text x="120" y="240" font-size="52" fill="#eef0ff" font-weight="700" text-anchor="start" fill-opacity="1">先問後講：讓 AI 當你的論文導師</text>
+<rect x="120" y="320" width="560" height="140" rx="18" fill="#10142b" fill-opacity="0.45" stroke="#8B7CFF" stroke-opacity="0.75" stroke-width="1.5"/>
+<text x="150" y="372" font-size="22" fill="#E9D8A6" font-weight="600" text-anchor="start" fill-opacity="1" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">01</text>
+<text x="210" y="374" font-size="32" fill="#eef0ff" font-weight="700" text-anchor="start" fill-opacity="1">先問後講</text>
+<text x="210" y="418" font-size="22" fill="#b7bcdb" font-weight="400" text-anchor="start" fill-opacity="1">AI 先請你預測、解釋或比較，最後才整理重點</text>
+<rect x="120" y="490" width="560" height="140" rx="18" fill="#10142b" fill-opacity="0.45" stroke="#8B7CFF" stroke-opacity="0.75" stroke-width="1.5"/>
+<text x="150" y="542" font-size="22" fill="#E9D8A6" font-weight="600" text-anchor="start" fill-opacity="1" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">02</text>
+<text x="210" y="544" font-size="32" fill="#eef0ff" font-weight="700" text-anchor="start" fill-opacity="1">隔一段時間再考</text>
+<text x="210" y="588" font-size="22" fill="#b7bcdb" font-weight="400" text-anchor="start" fill-opacity="1">沒有提示仍答得出來，才算真的會</text>
+<rect x="120" y="660" width="560" height="140" rx="18" fill="#10142b" fill-opacity="0.45" stroke="#8B7CFF" stroke-opacity="0.75" stroke-width="1.5"/>
+<text x="150" y="712" font-size="22" fill="#E9D8A6" font-weight="600" text-anchor="start" fill-opacity="1" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">03</text>
+<text x="210" y="714" font-size="32" fill="#eef0ff" font-weight="700" text-anchor="start" fill-opacity="1">每句話都找得到出處</text>
+<text x="210" y="758" font-size="22" fill="#b7bcdb" font-weight="400" text-anchor="start" fill-opacity="1">wiki 每段都標明，頁碼、圖號或公式編號</text>
+<path d="M1087 521 L928 405" stroke="#E9D8A6" stroke-opacity="0.45" stroke-width="2"/>
+<path d="M1193 521 L1352 405" stroke="#E9D8A6" stroke-opacity="0.45" stroke-width="2"/>
+<path d="M1084 594 L906 702" stroke="#E9D8A6" stroke-opacity="0.45" stroke-width="2"/>
+<path d="M1196 594 L1374 702" stroke="#E9D8A6" stroke-opacity="0.45" stroke-width="2"/>
+<path d="M1140 626 L1140 814" stroke="#E9D8A6" stroke-opacity="0.45" stroke-width="2" stroke-dasharray="6 8"/>
+<circle cx="1140" cy="560" r="56" fill="#E9D8A6" fill-opacity="0.18" stroke="#E9D8A6" stroke-opacity="0.9" stroke-width="2"/>
+<text x="1140" y="567" font-size="24" fill="#eef0ff" font-weight="700" text-anchor="middle" fill-opacity="1" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">deep</text>
+<text x="1140" y="486" font-size="22" fill="#eef0ff" font-weight="500" text-anchor="middle" fill-opacity="1">核心論文</text>
+<circle cx="880" cy="370" r="50" fill="#8B7CFF" fill-opacity="0.18" stroke="#8B7CFF" stroke-opacity="0.9" stroke-width="2"/>
+<text x="880" y="377" font-size="19" fill="#eef0ff" font-weight="700" text-anchor="middle" fill-opacity="1" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">middle</text>
+<text x="880" y="302" font-size="22" fill="#eef0ff" font-weight="500" text-anchor="middle" fill-opacity="1">背景理論</text>
+<circle cx="1400" cy="370" r="50" fill="#8B7CFF" fill-opacity="0.18" stroke="#8B7CFF" stroke-opacity="0.9" stroke-width="2"/>
+<text x="1400" y="377" font-size="19" fill="#eef0ff" font-weight="700" text-anchor="middle" fill-opacity="1" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">middle</text>
+<text x="1400" y="302" font-size="22" fill="#eef0ff" font-weight="500" text-anchor="middle" fill-opacity="1">研究方法</text>
+<circle cx="860" cy="730" r="44" fill="#8a90b4" fill-opacity="0.18" stroke="#8a90b4" stroke-opacity="0.9" stroke-width="2"/>
+<text x="860" y="737" font-size="19" fill="#eef0ff" font-weight="700" text-anchor="middle" fill-opacity="1" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">draft</text>
+<text x="860" y="808" font-size="22" fill="#b7bcdb" font-weight="500" text-anchor="middle" fill-opacity="1">相關研究</text>
+<circle cx="1420" cy="730" r="44" fill="#8a90b4" fill-opacity="0.18" stroke="#8a90b4" stroke-opacity="0.9" stroke-width="2"/>
+<text x="1420" y="737" font-size="19" fill="#eef0ff" font-weight="700" text-anchor="middle" fill-opacity="1" font-family="ui-monospace,SFMono-Regular,Menlo,monospace">draft</text>
+<text x="1420" y="808" font-size="22" fill="#b7bcdb" font-weight="500" text-anchor="middle" fill-opacity="1">相關研究</text>
+<circle cx="1140" cy="850" r="26" fill="#8a90b4" fill-opacity="0.18" stroke="#8a90b4" stroke-opacity="0.9" stroke-width="2"/>
+<text x="1140" y="910" font-size="22" fill="#b7bcdb" font-weight="500" text-anchor="middle" fill-opacity="1">下一篇要讀的</text>
+<text x="100" y="950" font-size="20" fill="#8a90b4" font-weight="400" text-anchor="start" fill-opacity="1">圓點＝wiki 頁，依重要程度分成 draft／middle／deep；虛線＝已被引用、還沒寫的頁</text>
+</g>
+</svg>
